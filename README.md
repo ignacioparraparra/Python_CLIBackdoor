@@ -3,6 +3,12 @@
 ## Objective
 Create persistant backdoor utilizing python3 and netcat in Linux CLI
 
+## Tools Used
+- Kali Linux CLI
+- Netcat
+- Python
+- Proxmox
+
 ## On Host
 ```ruby
 python3
